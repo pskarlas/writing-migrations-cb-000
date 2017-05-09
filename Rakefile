@@ -7,6 +7,7 @@ DatabaseTasks.migrations_paths = ['db/migrate']
 load 'active_record/railties/databases.rake'
 
 task :console => :environment do
+  require_relative "./app/models/student.rb"
   Pry.start
 end
 
